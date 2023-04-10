@@ -13,9 +13,8 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	/* declare variables */
-	int o, w, len = 0;
-        /* check if filenmae is NULL */
+	int o, w, len = 0; /*declare variables */
+        /*check if filenmae is NULL */
 	if (filename == NULL)
 		return (-1);
         /* check if text_content is not NULL, loop through it and increment len starting from 0 */
