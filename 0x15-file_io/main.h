@@ -6,7 +6,7 @@
 
 /*
  * Description: Header file containing prototypes for all functions
- * for the 0x15-file_io project
+ * for the 0x15-file_o task
  */
 
 /* Libraries Used in the Project */
