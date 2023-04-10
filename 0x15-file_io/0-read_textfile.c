@@ -13,16 +13,17 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	/* declare variables */
 	ssize_t open_file, read_file, write_file;
 	/* buffer to store the text */
 	char *buffer;
        
 	/* check if filename is NULL and return 0 */
-	if (filename == NULL)
+	if (!filename)
 		return (0);
         /* give memory to buffer */
 	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
+	if (!buffer)
 		return (0);
 
 	open_file = open(filename, O_RDONLY);
