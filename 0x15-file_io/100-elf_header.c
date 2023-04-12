@@ -4,7 +4,7 @@
 /**
  * print_error - Entry point
  * Description: Print error message to stderr and exit with code 98
- * @message: The error message to be printed
+ * @message: he error message to be printed
  */
 
 void print_error(char *message)
@@ -17,7 +17,7 @@ void print_error(char *message)
 /**
  * print_elf_header - Entry point
  * Description: Displays the ELF header
- * @header: Pointer to the ELF header
+ * @header: A pointer to the ELF header
  */
 
 void print_elf_header(Elf64_Ehdr *header)
@@ -68,7 +68,7 @@ void print_elf_header(Elf64_Ehdr *header)
  * read_elf_header - Entry point
  * Description: Reads the ELF header from a file
  * @filename: The name of the file to be read
- * @header: Pointer to the ELF header
+ * @header: A pointer to the ELF header
  */
 
 void read_elf_header(char *filename, Elf64_Ehdr *header)
@@ -88,7 +88,8 @@ void read_elf_header(char *filename, Elf64_Ehdr *header)
 /**
  * is_elf_file - Entry point
  * Description: Checks if a file is an ELF file
- * @header: Pointer to the ELF header
+ * @header: A pointer to the ELF header
+ *
  * Return: 1 if the file is an ELF file, 0 otherwise
  */
 
@@ -109,6 +110,7 @@ int is_elf_file(Elf64_Ehdr *header)
  * at the start of an ELF file.
  * @argc: The number of command-line arguments provided.
  * @argv: An array of strings
+ *
  * Return: 0 on success, 98 on failure.
  */
 
